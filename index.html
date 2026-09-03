@@ -302,7 +302,7 @@
 
   <!-- CARD DECK -->
   <section id="deck" class="screen">
-    <div class="counter" id="counter">Cosa 1 di 15</div>
+    <div class="counter" id="counter">1 di 15</div>
     <div class="progress-track">
       <div class="progress-fill" id="progressFill"></div>
     </div>
@@ -371,7 +371,7 @@
 
   function renderCard(direction) {
     cardText.textContent = listaDonatella[index];
-    counterEl.textContent = `Cosa ${index + 1} di ${listaDonatella.length}`;
+    counterEl.textContent = `${index + 1} di ${listaDonatella.length}`;
     progressFill.style.width = `${((index + 1) / listaDonatella.length) * 100}%`;
 
     card.classList.remove('enter-next', 'enter-prev');
