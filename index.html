@@ -69,6 +69,17 @@
     animation: bounce 2.2s ease-in-out infinite;
   }
 
+  #landing .profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 30px var(--shadow);
+    margin-bottom: 18px;
+    animation: bounce 2.2s ease-in-out infinite;
+  }
+
   @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
@@ -272,11 +283,11 @@
 
   <!-- LANDING -->
   <section id="landing" class="screen active">
-    <div class="emoji">🇮🇹💅</div>
+    <img class="profile-photo" src="assets/donatella.jpg" alt="Donatella">
     <h1>Cose che farebbe Donatella<br>piuttosto che votare Vannacci</h1>
     <p class="subtitle">
       Una lista scientificamente accurata di alternative che, per Donatella,
-      battono comodamente sia il generale sia — diciamocelo — anche uno stipendio vero.
+      battono comodamente sia il generale.
     </p>
     <button class="btn btn-primary" id="startBtn">Inizia a scoprire →</button>
   </section>
